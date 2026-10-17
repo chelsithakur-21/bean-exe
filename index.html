@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software engineering portfolio featuring projects, skills and development work.">
+    <title>BEAN.exe | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#overview" aria-label="BEAN home">
+            <span class="brand-mark">B<span>.</span></span>
+            <span>BEAN<span class="brand-light">.exe</span></span>
+        </a>
+
+        <div class="sidebar-label">WORKSPACE</div>
+
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="nav-link active" href="#overview"><span>01</span> Overview</a>
+            <a class="nav-link" href="#about"><span>02</span> About me</a>
+            <a class="nav-link" href="#education"><span>03</span> Education</a>
+            <a class="nav-link" href="#projects"><span>04</span> Projects</a>
+            <a class="nav-link" href="#skills"><span>05</span> Skills</a>
+            <a class="nav-link" href="#lab"><span>06</span> Interactive lab</a>
+            <a class="nav-link" href="#contact"><span>07</span> Contact</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <span class="status-dot"></span>
+            <span>OPEN TO OPPORTUNITIES</span>
+            <button id="motionToggle" class="mini-button" type="button"
+                aria-label="Toggle animation">Motion: ON</button>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <button id="menuToggle" class="menu-button" type="button"
+                aria-label="Toggle sidebar" aria-expanded="false">☰</button>
+            <span class="breadcrumb">PORTFOLIO / <span id="currentPage">OVERVIEW</span></span>
+            <span class="top-clock" id="clock">LOCAL TIME</span>
+        </header>
+
+        <section class="hero page-section" id="overview">
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEERING PORTFOLIO</div>
+
+                <p class="hero-kicker">A little unconventional. A lot curious.</p>
+                <h1>Building ideas<br>into <span class="accent-text">software.</span></h1>
+
+                <p class="hero-description">
+                    I'm a Computer Science student focused on web development,
+                    practical problem-solving and building useful digital experiences.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore my work ↗</a>
+                    <a class="button button-secondary" href="#about">Meet the developer</a>
+                </div>
+
+                <div class="hero-meta">
+                    <span>HTML · CSS · JavaScript</span>
+                    <span class="meta-divider"></span>
+                    <span>Learning by building</span>
+                </div>
+            </div>
+
+            <div class="hero-visual" id="heroVisual">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+                <div class="visual-glow"></div>
+
+                <div class="visual-tag tag-top">CREATIVE THINKING <span>↗</span></div>
+                <div class="bean-frame">
+                    <div class="image-backdrop"></div>
+                    
+<img src="assets/Mr. Bean in a Futuristic Portal.png"
+     alt="Mr. Bean standing"
+     class="bean-image"
+     id="beanImage">
+
+                        class="bean-image" id="beanImage">
+                    <div class="image-fallback" id="imageFallback" hidden>
+                        Add your image at <code>assets/mr-bean.jpg</code>
+                    </div>
+                </div>
+
+                <div class="visual-tag tag-bottom"><span class="status-dot"></span> THE UNEXPECTED DEVELOPER</div>
+                <div class="floating-chip chip-one">{"curiosity": true}</div>
+                <div class="floating-chip chip-two">console.log("Hello!");</div>
+            </div>
+
+            <a href="#about" class="scroll-cue">SCROLL TO EXPLORE ↓</a>
+        </section>
+
+        <section class="page-section about-section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">01 / THE PERSON BEHIND THE CODE</p>
+                <h2>Curiosity is a <span class="accent-text">superpower.</span></h2>
+            </div>
+            <div class="about-grid">
+                <article class="panel about-copy">
+                    <p class="large-copy">Software engineering is more than writing code.
+                        It's about understanding a problem and making something useful.</p>
+                    <p>
+                        I'm pursuing Computer Science with an IoT specialization and
+                        developing my skills through full-stack projects, web technologies
+                        and continuous practice.
+                    </p>
+                    <p>
+                        My goal is to grow into a software engineer who can turn ideas
+                        into reliable, user-friendly applications.
+                    </p>
+                </article>
+                <article class="panel principle-panel">
+                    <span class="panel-index">MY APPROACH / 001</span>
+                    <div class="principle"><span>01</span><div><strong>Understand</strong><p>Break problems into smaller steps.</p></div></div>
+                    <div class="principle"><span>02</span><div><strong>Build</strong><p>Turn ideas into working features.</p></div></div>
+                    <div class="principle"><span>03</span><div><strong>Improve</strong><p>Test, learn and iterate.</p></div></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section" id="education">
+            <div class="section-heading">
+                <p class="eyebrow">02 / ACADEMIC BACKGROUND</p>
+                <h2>Learning the <span class="accent-text">fundamentals.</span></h2>
+            </div>
+            <article class="panel education-card">
+                <div class="education-symbol">EDU<span>↗</span></div>
+                <div>
+                    <span class="panel-index">UNDERGRADUATE STUDIES</span>
+                    <h3>Meerut Institute of Engineering and Technology</h3>
+                    <p>Computer Science and Engineering — IoT Specialization</p>
+                    <p class="muted">Relevant areas: programming, databases, web development and software fundamentals.</p>
+                </div>
+                <span class="education-badge">IN PROGRESS</span>
+            </article>
+        </section>
+
+        <section class="page-section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">03 / SELECTED WORK</p>
+                <h2>Ideas made <span class="accent-text">tangible.</span></h2>
+                <p>Explore the projects and the problems they aim to solve.</p>
+            </div>
+
+            <div class="filter-row" aria-label="Filter projects">
+                <button class="filter-button active" data-filter="all" type="button">All projects</button>
+                <button class="filter-button" data-filter="web" type="button">Web development</button>
+                <button class="filter-button" data-filter="ai" type="button">AI concepts</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="panel project-card" data-category="web">
+                    <div class="project-art lumora-art"><span>01 / FINANCE</span><div class="mock-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><strong>LUMORA</strong></div>
+                    <div class="project-body">
+                        <div class="project-status">PERSONAL FINANCE DASHBOARD</div>
+                        <h3>Lumora</h3>
+                        <p>A finance dashboard concept for organizing transactions, savings goals and spending insights.</p>
+                        <div class="tag-list"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+                        <button class="text-button details-button" data-project="lumora" type="button">Explore case study ↗</button>
+                    </div>
+                </article>
+
+                <article class="panel project-card" data-category="ai">
+                    <div class="project-art devtrack-art"><span>02 / DEVELOPER TOOLS</span><div class="orbit-core">AI</div><strong>DEVTRACK</strong></div>
+                    <div class="project-body">
+                        <div class="project-status">AI-ASSISTED LEARNING CONCEPT</div>
+                        <h3>DevTrack AI</h3>
+                        <p>A developer-learning platform concept with skill assessments, roadmaps and progress tracking.</p>
+                        <div class="tag-list"><span>React</span><span>Node.js</span><span>REST APIs</span><span>AI concepts</span></div>
+                        <button class="text-button details-button" data-project="devtrack" type="button">Explore case study ↗</button>
+                    </div>
+                </article>
+            </div>
+            <p class="notice">Project descriptions should match your actual implementation. Update links and label unfinished features honestly before publishing.</p>
+        </section>
+
+        <section class="page-section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">04 / TOOLKIT</p>
+                <h2>Skills in <span class="accent-text">progress.</span></h2>
+                <p>Select a category to explore the tools and concepts within it.</p>
+            </div>
+            <div class="skill-layout">
+                <div class="skill-categories" role="group" aria-label="Skill categories">
+                    <button class="skill-tab active" data-skill="frontend" type="button">01 / Frontend</button>
+                    <button class="skill-tab" data-skill="backend" type="button">02 / Backend</button>
+                    <button class="skill-tab" data-skill="database" type="button">03 / Databases</button>
+                    <button class="skill-tab" data-skill="workflow" type="button">04 / Workflow</button>
+                </div>
+                <article class="panel skill-detail" aria-live="polite">
+                    <span class="panel-index" id="skillIndex">CATEGORY / 01</span>
+                    <h3 id="skillTitle">Frontend development</h3>
+                    <p id="skillDescription">Building accessible, responsive interfaces.</p>
+                    <div class="skill-tags" id="skillTags"></div>
+                </article>
+            </div>
+            <p class="notice">This is a learning toolkit, not a verified proficiency score. Keep only the technologies you can discuss honestly.</p>
+        </section>
+
+        <section class="page-section lab-section" id="lab">
+            <div class="section-heading">
+                <p class="eyebrow">05 / PLAYGROUND</p>
+                <h2>A terminal with <span class="accent-text">personality.</span></h2>
+                <p>Try a command below. This is a local portfolio demo, not a real operating-system terminal.</p>
+            </div>
+            <div class="terminal panel">
+                <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>bean-shell — local demo</span><button id="clearTerminal" type="button">CLEAR</button></div>
+                <div class="terminal-output" id="terminalOutput" aria-live="polite">
+                    <p>BEAN Shell v1.0</p><p>Type <strong>help</strong> to see available commands.</p>
+                </div>
+                <form class="terminal-form" id="terminalForm">
+                    <label for="terminalInput">bean@portfolio:~$</label>
+                    <input id="terminalInput" autocomplete="off" placeholder="type help..." aria-label="Enter terminal command">
+                    <button type="submit" aria-label="Run command">RUN ↗</button>
+                </form>
+            </div>
+            <div class="command-hints"><button type="button" data-command="about">about</button><button type="button" data-command="skills">skills</button><button type="button" data-command="projects">projects</button><button type="button" data-command="help">help</button></div>
+        </section>
+
+        <section class="page-section contact-section" id="contact">
+            <div class="contact-card">
+                <p class="eyebrow">06 / LET'S CONNECT</p>
+                <h2>Have a good<br><span class="accent-text">idea?</span></h2>
+                <p>I'm interested in learning, collaborating and exploring entry-level software engineering opportunities.</p>
+                <a class="button button-primary" href="mailto:YOUR_EMAIL@example.com" id="emailLink">Get in touch ↗</a>
+                <p class="muted small">Replace the placeholder email and add your real GitHub and LinkedIn links before publishing.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span>BEAN.exe <span class="muted">/ BUILT WITH CURIOSITY</span></span>
+            <a href="#overview">BACK TO TOP ↑</a>
+            <span id="footerYear"></span>
+        </footer>
+    </main>
+
+    <dialog id="projectDialog" class="project-dialog">
+        <button class="dialog-close" id="dialogClose" type="button" aria-label="Close dialog">×</button>
+        <p class="eyebrow" id="dialogEyebrow">PROJECT / CASE STUDY</p>
+        <h2 id="dialogTitle">Project</h2>
+        <p id="dialogDescription"></p>
+        <h3>Key areas</h3>
+        <ul id="dialogFeatures"></ul>
+        <p class="muted small">Edit this case study to match the features you have actually implemented.</p>
+    </dialog>
+
+    <button class="back-top" id="backTop" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
